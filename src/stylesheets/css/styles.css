@@ -1,0 +1,63 @@
+/********************
+
+		SASS LIB
+
+********************/
+/********************
+
+		FONTS
+
+*********************/
+@font-face {
+  font-family: Moon-Light;
+  src: url(../../../fonts/Moon-Light.otf) format("opentype"); }
+
+/********************
+
+		BASE
+
+*********************/
+img {
+  zoom: 0.2; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100%; }
+
+body, h2 {
+  background-color: #1f2125;
+  color: white; }
+
+.main-section {
+  display: flex;
+  flex-direction: column; }
+  .main-section .main-section-content {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .main-section .card-overloader {
+    background-color: white;
+    color: #1f2125; }
+  .main-section .jumbo-overloader {
+    background-color: #9c9c9c; }
+  .main-section .main-wrapper {
+    background-color: #1f2125; }
+
+/*********************
+
+		MODULES
+
+**********************/
+/********************
+
+		MISC.
+
+*********************/
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }

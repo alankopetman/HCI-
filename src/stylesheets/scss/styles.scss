@@ -1,0 +1,146 @@
+/********************
+
+		SASS LIB
+
+********************/
+
+$primary-color: #1f2125;
+$font-color: white;
+$jumbo-color: #9c9c9c;
+
+$phone: "(max-width: 640px)";
+$small-phone: "(max-width: 320px)";
+$tablet: "(min-width: 641px)";
+$desktop: "(min-width: 1024px)";
+$tablet-up-size: "(min-width: 640px)";
+$tablet-down: "(max-width: 1023px)";
+
+@mixin phone{
+	@media #{$phone}{
+		@content;
+	}
+}
+@mixin small-phone{
+	@media #{$small-phone}{
+		@content;
+	}
+}
+@mixin tablet{
+	@media #{$tablet}{
+		@content;
+	}
+}
+@mixin tablet-up{
+	@media #{$tablet-up-size}{
+		@content;
+	}
+}
+
+@mixin tablet-down{
+	@media #{$tablet-down}{
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media #{$desktop}{
+		@content;
+
+	}
+}
+
+@mixin flexible-top($elementHeight) {
+    top: (-( $elementHeight ));
+}
+
+
+/********************
+
+		FONTS
+
+*********************/
+
+@font-face {
+	font-family: Moon-Light;
+	src: url(../../../fonts/Moon-Light.otf) format("opentype");
+}
+
+/********************
+
+		BASE
+
+*********************/
+
+img {
+	zoom: 0.2;
+	//padding-top: 40%;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	height: 100%;
+}
+
+body, h2 {
+	background-color: $primary-color;
+	color: $font-color;
+}
+
+.main-section {
+	display: flex;
+	flex-direction: column;
+
+	.main-section-content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.card-overloader {
+		background-color: white;
+		color: $primary-color;
+	}
+	.jumbo-overloader {
+		background-color: $jumbo-color;
+	}
+
+	.main-wrapper {
+		background-color: $primary-color;
+	}
+}
+footer{
+}
+
+/*********************
+
+		MODULES
+
+**********************/
+
+.section-subtitle{
+	@include desktop{
+	}
+}
+
+.nav-bar-wrapper-top {
+
+}
+
+.nav-bar-wrapper-bottom {
+
+}
+
+/********************
+
+		MISC.
+
+*********************/
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
