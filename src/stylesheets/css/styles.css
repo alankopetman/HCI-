@@ -36,11 +36,18 @@ body, h2 {
   .main-section .main-section-content {
     padding-left: 5%;
     padding-right: 5%; }
-  .main-section .card-overloader {
-    background-color: white;
-    color: #1f2125; }
   .main-section .jumbo-overloader {
     background-color: #9c9c9c; }
+  .main-section .card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    .main-section .card-wrapper .card-overloader {
+      background-color: white;
+      color: #1f2125; }
+    .main-section .card-wrapper .button-overloader {
+      background-color: #1f2125;
+      border-color: #1f2125; }
   .main-section .main-wrapper {
     background-color: #1f2125; }
 

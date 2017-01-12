@@ -96,14 +96,25 @@ body, h2 {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.card-overloader {
-		background-color: white;
-		color: $primary-color;
-	}
+
 	.jumbo-overloader {
 		background-color: $jumbo-color;
 	}
 
+	.card-wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+
+		.card-overloader {
+			background-color: white;
+			color: $primary-color;
+		}
+		.button-overloader {
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+	}
 	.main-wrapper {
 		background-color: $primary-color;
 	}
